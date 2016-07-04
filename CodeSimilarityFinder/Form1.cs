@@ -41,6 +41,7 @@ namespace CodeSimilarityFinder
             this.projects_cb.SelectedIndex = 0;
         }
 
+        //TODO: Create a separate class to seach duplicates.
         private void find_btn_Click(object sender, EventArgs e)
         {
             UseWaitCursor = true;
