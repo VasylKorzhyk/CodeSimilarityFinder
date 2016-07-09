@@ -19,7 +19,7 @@ namespace CodeSimilarityFinder
             new DataGridViewTextBoxColumn { Name = "Project", AutoSizeMode = DataGridViewAutoSizeColumnMode.None },
             new DataGridViewTextBoxColumn { Name = "File", AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill },
             new DataGridViewTextBoxColumn { Name = "Line", AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells });
-
+            
             this.solutionComponents = LoadSolutionConponents(Directory.GetParent(Environment.CurrentDirectory).FullName);
 
             this.components_cb.Items.Add("All Components");
