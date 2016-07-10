@@ -1,27 +1,14 @@
-﻿using System;
-using Ninject;
+﻿using CodeSimilarityFinder.Services;
 using Ninject.Modules;
 
 namespace CodeSimilarityFinder
 {
-    class NinjectRegistrationModule : INinjectModule
+    public class NinjectRegistrationModule : NinjectModule
     {
-        public IKernel Kernel { get; }
-        public void OnLoad(IKernel kernel)
+        public override void Load()
         {
-            throw new NotImplementedException();
+            Kernel.Bind<IProjectScanner>().To<ProjectScanner>();
+            Kernel.Bind<ISolutionComponentsLoader>().To<SolutionComponentsLoader>();
         }
-
-        public void OnUnload(IKernel kernel)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void OnVerifyRequiredModules()
-        {
-            throw new NotImplementedException();
-        }
-
-        public string Name { get; }
     }
 }

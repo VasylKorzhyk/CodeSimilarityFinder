@@ -57,9 +57,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Services\IProjectScanner.cs" />
+    <Compile Include="Services\ISolutionComponentsLoader.cs" />
     <Compile Include="NinjectRegistrationModule.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Services\ProjectScanner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\SolutionComponentsLoader.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
